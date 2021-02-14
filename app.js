@@ -30,31 +30,23 @@ for (i = 0; i < Hours.length; i++) {
 
 }
 
-let parent = document.getElementById('City');
+let city1 = document.getElementById('City');
 console.log(parent);
 
-let child = document.createElement('p');
-console.log(child);
+let child1 = document.createElement('p');
+console.log(child1);
 
-parent.appendChild(child);
-child.textContent = 'Seattle';
+city1.appendChild(child1);
+child1.textContent = 'Seattle';
 
-let unorderList = document.createElement('ul');
-parent.appendChild(unorderList);
+let unorderList1 = document.createElement('ul');
+city1.appendChild(unorderList1);
 
-for (i=0; i<CookiesPerHours.length ; i++){
-
-    let listItem = document.createElement('li');
-    unorderList.appendChild(listItem);
-    listItem.textContent = CookiesPerHours[i];
-
+ for (let i=0 ; i<Hours.length; i++){
+    let listItem1=document.createElement('li');
+    unorderList1.appendChild(listItem1);
+    listItem1.textContent=Hours[i];
 }
-
-
-
-
-
-
 
 
 
@@ -76,6 +68,26 @@ for (i = 0; i < Hours.length; i++) {
 
 }
 
+let city2 = document.getElementById('City');
+console.log(parent);
+
+let child2 = document.createElement('p');
+console.log(child2);
+
+city2.appendChild(child2);
+child2.textContent = 'Tokyo';
+
+let unorderList2 = document.createElement('ul');
+city2.appendChild(unorderList2);
+
+for (let i=0 ; i<Hours.length; i++){
+    let listItem2=document.createElement('li');
+    unorderList2.appendChild(listItem2);
+    listItem2.textContent=Hours[i] 
+    
+
+
+}
 
 let Dubai = {
     minCookies: 11,
@@ -94,7 +106,24 @@ for (i = 0; i < Hours.length; i++) {
     console.log(Hours[i], CookiesPerHours);
 
 }
+let city3 = document.getElementById('City');
+console.log(parent);
 
+let child3 = document.createElement('p');
+console.log(child3);
+
+city3.appendChild(child3);
+child3.textContent = 'Dubai';
+
+let unorderList3 = document.createElement('ul');
+city3.appendChild(unorderList3);
+
+for (let i=0 ; i<Hours.length; i++){
+    let listItem3=document.createElement('li');
+    unorderList3.appendChild(listItem3);
+    listItem3.textContent=Hours[i] 
+    
+}
 
 let Paris = {
     minCookies: 20,
@@ -116,7 +145,24 @@ for (i = 0; i < Hours.length; i++) {
 
 
 
+let city4 = document.getElementById('City');
+console.log(parent);
 
+let child4 = document.createElement('p');
+console.log(child4);
+
+city4.appendChild(child4);
+child4.textContent = 'Paris';
+
+let unorderList4 = document.createElement('ul');
+city4.appendChild(unorderList4);
+
+for (let i=0 ; i<Hours.length; i++){
+    let listItem4=document.createElement('li');
+    unorderList4.appendChild(listItem4);
+    listItem4.textContent=Hours[i] 
+    
+}
 
 let Lima = {
     minCookies: 2,
@@ -133,6 +179,25 @@ for (i = 0; i < Hours.length; i++) {
 
     let CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
     console.log(Hours[i], CookiesPerHours);
+}
+
+let city5 = document.getElementById('City');
+console.log(parent);
+
+let child5 = document.createElement('p');
+console.log(child5);
+
+city5.appendChild(child5);
+child5.textContent = 'Lima';
+
+let unorderList5 = document.createElement('ul');
+city5.appendChild(unorderList5);
+
+for (let i=0 ; i<Hours.length; i++){
+    let listItem5=document.createElement('li');
+    unorderList5.appendChild(listItem5);
+    listItem5.textContent=Hours[i] 
+    
 }
 
 
