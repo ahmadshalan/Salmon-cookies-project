@@ -2,8 +2,6 @@
 
 Hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
-console.log(Hours);
-
 let Seattle = {
     minCookies: 23,
     maxCookies: 65,
@@ -11,27 +9,29 @@ let Seattle = {
      getCustomersPerHours: function () {
         this.getCustomersPerHours = randomCustomers(23, 65)
         console.log(this.getCustomersPerHours);
-
     }
 }
 Seattle.getCustomersPerHours()
-
 
 function randomCustomers(min, max) {
 
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+let CustomersPerHours;
+
+let CookiesPerHours;
+
 for (i = 0; i < Hours.length; i++) {
-    let CustomersPerHours = (Hours[i], randomCustomers(23, 65));
+    CustomersPerHours = (Hours[i], randomCustomers(23, 65));
 
-    let CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
-    console.log(Hours[i], CookiesPerHours);
-
+    CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
+    
+   console.log(Hours[i],CookiesPerHours);
 }
 
 let city1 = document.getElementById('City');
-console.log(parent);
+console.log(city1);
 
 let child1 = document.createElement('p');
 console.log(child1);
@@ -45,7 +45,7 @@ city1.appendChild(unorderList1);
  for (let i=0 ; i<Hours.length; i++){
     let listItem1=document.createElement('li');
     unorderList1.appendChild(listItem1);
-    listItem1.textContent=Hours[i];
+    listItem1.textContent=[`${Hours[i]}:${CookiesPerHours}`];
 }
 
 
@@ -54,16 +54,16 @@ let Tokyo = {
     minCookies: 3,
     maxCookies: 24,
     avgCookies: 1.2,
-    ggetCustomersPerHours: function () {
+    getCustomersPerHours: function () {
         this.getCustomersPerHours = randomCustomers(3, 24)
         console.log(this.getCustomersPerHours);
     }
 }
-
+Tokyo.getCustomersPerHours()
 for (i = 0; i < Hours.length; i++) {
     let CustomersPerHours = (Hours[i], randomCustomers(3, 24));
 
-    let CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
+    CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
     console.log(Hours[i], CookiesPerHours);
 
 }
@@ -83,7 +83,7 @@ city2.appendChild(unorderList2);
 for (let i=0 ; i<Hours.length; i++){
     let listItem2=document.createElement('li');
     unorderList2.appendChild(listItem2);
-    listItem2.textContent=Hours[i] 
+    listItem2.textContent=[`${Hours[i]}:${CookiesPerHours}`]
     
 
 
@@ -98,11 +98,11 @@ let Dubai = {
         console.log(this.getCustomersPerHours);
     }
 }
-
+Dubai.getCustomersPerHours()
 for (i = 0; i < Hours.length; i++) {
     let CustomersPerHours = (Hours[i], randomCustomers(11, 38));
 
-    let CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
+    CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
     console.log(Hours[i], CookiesPerHours);
 
 }
@@ -121,7 +121,8 @@ city3.appendChild(unorderList3);
 for (let i=0 ; i<Hours.length; i++){
     let listItem3=document.createElement('li');
     unorderList3.appendChild(listItem3);
-    listItem3.textContent=Hours[i] 
+    listItem3.textContent=[`${Hours[i]}:${CookiesPerHours}`]
+    
     
 }
 
@@ -134,11 +135,11 @@ let Paris = {
         console.log(this.getCustomersPerHours);
     }
 }
-
+Paris.getCustomersPerHours()
 for (i = 0; i < Hours.length; i++) {
-    let CustomersPerHours = (Hours[i], randomCustomers(20, 38));
+    CustomersPerHours = (Hours[i], randomCustomers(20, 38));
 
-    let CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
+    CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
     console.log(Hours[i], CookiesPerHours);
 
 }
@@ -160,7 +161,7 @@ city4.appendChild(unorderList4);
 for (let i=0 ; i<Hours.length; i++){
     let listItem4=document.createElement('li');
     unorderList4.appendChild(listItem4);
-    listItem4.textContent=Hours[i] 
+    listItem4.textContent=[`${Hours[i]}:${CookiesPerHours}`] 
     
 }
 
@@ -173,11 +174,11 @@ let Lima = {
         console.log(this.getCustomersPerHours);
     }
 }
-
+Lima.getCustomersPerHours()
 for (i = 0; i < Hours.length; i++) {
     let CustomersPerHours = (Hours[i], randomCustomers(2, 16));
 
-    let CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
+    CookiesPerHours = Math.floor(Seattle.avgCookies * CustomersPerHours);
     console.log(Hours[i], CookiesPerHours);
 }
 
@@ -196,8 +197,9 @@ city5.appendChild(unorderList5);
 for (let i=0 ; i<Hours.length; i++){
     let listItem5=document.createElement('li');
     unorderList5.appendChild(listItem5);
-    listItem5.textContent=Hours[i] 
+    listItem5.textContent=[`${Hours[i]}:${CookiesPerHours}`] 
     
 }
+
 
 
