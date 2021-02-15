@@ -209,7 +209,7 @@ const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm',
 
 function random(min, max) {
 
-        return Math.floor(Math.random() * (max - min + 1) + min);
+        return Math.floor(Math.random()*(max - min + 1) + min);
     }
 
 
@@ -226,17 +226,17 @@ const Seattle = {
 
         calcCustomersEachHour: function (){
             for (let i=0; i<hours.length ; i++){
-                this.CustomersEachours.push(random(this.minCustomer,this.maxCustomers))
+                this.CustomersEachours.push(random(this.minCustomer,this.maxCustomers));
 
             }
 
         },
 
-        calcCookiesEachHour: function(){
+        calcCookiesEachHour:function(){
         for( let i=0 ; i<hours.length; i++)
         this.CookiesEachHour.push(Math.floor(this.CustomersEachHour[i]*this.avgCookies));
 
-        this.total +=this.CustomersEachours[i];
+        this.total +=this.cookiesEachHours[i]
 
     
     },
@@ -293,7 +293,7 @@ const Seattle = {
         for( let i=0 ; i<hours.length; i++)
         this.CookiesEachHour.push(Math.floor(this.CustomersEachHour[i]*this.avgCookies));
 
-        this.total +=this.c
+        this.total +=this.CustomersEachours[i];
 
     
     },
