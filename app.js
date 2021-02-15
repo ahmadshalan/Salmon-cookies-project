@@ -774,9 +774,17 @@ const dubai = {
 // nameElement.textContent = 'name'
 
 
+
+    let citiesColum = document.createElement('tr')
+    table.appendChild(citiesColum);
+
+    let nameData =document.createElement('td');
+    citiesColum.appendChild(nameData);
+
 // for (i=0; i< hours.length ; i++){
 
 // let timeElement =document.createElement('th')
+
 
 // headingRow.appendChild(timeElement)
 
@@ -802,6 +810,15 @@ const dubai = {
     
 
 
+
+for (i=0 ; i<hours.length ; i++){
+
+let seattlesRow = document.createElement('td')
+table.appendChild(seattlesRow);
+
+seattlesRow.textContent = seattle.calcCookiesEachHour();
+
+}
 
 
 
