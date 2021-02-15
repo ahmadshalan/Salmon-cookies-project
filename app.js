@@ -432,16 +432,25 @@ totaldailyElement.textContent = ' daily location total'
 
 for (i=0 ; i<cities.length ; i++){
 
-    let citiesRow = document.createElement('tr')
-    table.appendChild(citiesRow);
+    let citiesColum = document.createElement('tr')
+    table.appendChild(citiesColum);
 
     let nameData =document.createElement('td');
-    citiesRow.appendChild(nameData);
+    citiesColum.appendChild(nameData);
 
     nameData.textContent = cities[i].name;
     
 }
 
+
+for (i=0 ; i<hours.length ; i++){
+
+let seattlesRow = document.createElement('td')
+table.appendChild(seattlesRow);
+
+seattlesRow.textContent = seattle.calcCookiesEachHour();
+
+}
 
 
 
