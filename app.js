@@ -500,25 +500,7 @@ footerRow.appendChild(nameElement1)
 nameElement1.textContent = 'totals'
 
 
-for (let i = 0; i < hours.length; i++) {
 
-    let timeElement = document.createElement('th')
-
-    footerRow.appendChild(timeElement)
-
-     
-
-    for (let j= 0 ; j<cities.length ; j++){
-
-        timeElement.textContent = seattle.CookiesEachHour[i]+tokyo.CookiesEachHour[i]+dubai.CookiesEachHour[i]
-        +paris.CookiesEachHour[i]+lima.CookiesEachHour[i];
-    }
-}
-let totaldailyElement1 = document.createElement('th');
-footerRow.appendChild(totaldailyElement1);
-totaldailyElement1.textContent= seattle.total+tokyo.total+dubai.total+paris.total+lima.total;
-}
-footer2()
 
 let citiesForm = document.getElementById('Cities form');
 
@@ -531,7 +513,6 @@ function submitter(event) {
 
     let name = event.target.name.value;
 
-
     let minCookies = event.target.min.value;
 
     let maxCookies = event.target.max.value;
@@ -541,8 +522,9 @@ function submitter(event) {
 
     let addedCity = new Cities(name, minCookies, maxCookies, avgCookies);
 
-    // addedCity.render();
+    console.log(addedCity);
 
+    // addedCity.render();
 
     let container = document.getElementById('table');
 
@@ -550,16 +532,38 @@ function submitter(event) {
         
         table2();
         
-        cities.push(addedCity);
+        cities[i].push(addedCity);
+        console.log(cities[i]);
     
+        for (let i = 0; i < hours.length; i++) {
+
+            let timeElement = document.createElement('th')
+        
+            footerRow.appendChild(timeElement)
+        
+             
+        
+            for (let j= 0 ; j<cities.length ; j++){
+        
+                timeElement.textContent += cities[j].CookiesEachHour[i]
+                
+                // seattle.CookiesEachHour[i]+tokyo.CookiesEachHour[i]+dubai.CookiesEachHour[i]
+                // +paris.CookiesEachHour[i]+lima.CookiesEachHour[i];
+            }
+        }
+        let totaldailyElement1 = document.createElement('th');
+        footerRow.appendChild(totaldailyElement1);
+        totaldailyElement1.textContent+= cities[i].total; 
+        // seattle.total+tokyo.total+dubai.total+paris.total+lima.total;
+        }
+        footer2()
+
 
     for (var i = 0; i < cities.length; i++) {
 
-        
         cities[i].getCustomersEachHour();
         cities[i].calcCookiesEachHour();
         cities[i].render();
-        
     }
     footer2();
 }
