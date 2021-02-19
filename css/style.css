@@ -8,46 +8,52 @@
     background-color: rgb(53, 50, 50);
   }
   table {
-    border: solid black 1px;
+    border: solid black 5px;
 
     text-align: center;
 
-    margin-left: 300px;
+    margin-left: 250px;
+    background-color: rgb(216, 158, 83);
 
   }
   th {
-    border: solid black 1px;
+    border: solid black 2px;
   }
   
   td{
-    border: solid black 1px;
+    border: solid black 2px;
   }
 
   body {
 
     background-color: rgb(205, 211, 199);
+    background-image: url(../images/chinook.jpg);
+    background-repeat: repeat;
   }
 
 
   form {
 
     text-align: center;
+    background-color:rgb(216, 158, 83) ;
+    border: solid black 5px;
 
-    margin-right:600px;
-    margin-left: 600px;
+    margin-right:560px;
+    margin-left: 560px;
     margin-bottom: 50px;
     margin-top: 50px;
   }
 
   nav ul{
 
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
 
     text-align: center;
   }
   nav ul li {
     display: inline-block;
     padding: 20 px;
+    /* background-color: blanchedalmond; */
     margin-right: 40px;
     margin-left: 40px;
     margin-top: 30px;
@@ -57,10 +63,10 @@
   }
   nav ul li a{
 
-    color: rgb(185, 126, 126);
+    color:   rgb(247, 204, 149);
     text-decoration: none;
     padding: 10px;
-    background-color: black;
+    /* background-color: blanchedalmond; */
     margin-bottom: 30px;
     border-radius: 15px;
 }
@@ -68,9 +74,11 @@
   h1 {
 
     text-align: center;
+    color:  rgb(243, 189, 119);
+    
   }
 
-  header{
+  /* header{
     position: relative;
     padding: 10px;
     height: 100px;
@@ -78,7 +86,7 @@
     background-color: gray;
 
     text-decoration: none;
-} 
+}  */
 
 
 #pic{
@@ -91,5 +99,41 @@
 }
 footer{
 
-  background-color: blanchedalmond;
+  /* background-color: rgb(0, 0, 0); */
+  color: rgb(216, 158, 83) ;
+  text-align: center;
+
+  margin-top: 350px;
+  
+}
+
+#images-page  {
+
+  display: inline-block;
+
+  margin-left: 50px;
+}
+
+/* header{
+
+  /* background-color: black; */
+/* } */ */
+
+h2{
+
+  color:  rgb(216, 158, 83);
+  text-align: center;
+
+}
+
+section article p {
+
+  color:  rgb(202, 136, 51);
+
+  padding: 100px;
+  margin-right: 180px;
+  margin-left: 180px;
+  margin-top: 100px;
+  background-image: url(../images/old-letter-background-paper-vector-5437971.jpg);
+  text-align: center;
 }
