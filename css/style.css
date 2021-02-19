@@ -1,7 +1,7 @@
 
 
 * {
-    font-family: Arial;
+  font-family: 'Akaya Kanadaka', cursive;
   }
   tr:hover{
 
@@ -126,7 +126,7 @@ h2{
 
 }
 
-section article p {
+ p { 
 
   color:  rgb(202, 136, 51);
 
